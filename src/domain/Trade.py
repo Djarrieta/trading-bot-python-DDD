@@ -17,7 +17,8 @@ class Trade:
         # Logger
         self.logger = logger
 
-        self.logger.log("console")
+        self.logger.log(self.logger.formattedDate("23-05-10 15:04:08"))
+
         self.logger.ping("ping")
 
     def __str__(self) -> str:
