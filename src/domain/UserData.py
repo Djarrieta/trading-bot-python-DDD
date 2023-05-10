@@ -11,4 +11,6 @@ class UserData(Validate):
     start_balance: float
     api_key: str
     api_secret: str
+    token: str
+    chat_id: str
     max_risk_percent: int

@@ -5,6 +5,11 @@ from abc import ABC, abstractmethod
 
 @dataclass
 class Logger(ABC):
+
+    @abstractmethod
+    def ping(self, text: str):
+        pass
+
     def log(self, text: str):
 
         print(
@@ -25,7 +30,3 @@ _________________
                 date, "%y-%m-%d %H:%M:%S")
 
         return formatted_date
-
-    @abstractmethod
-    def ping(self, text: str):
-        pass

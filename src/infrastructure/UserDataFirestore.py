@@ -25,4 +25,6 @@ class UserDataFirestore(UserData):
         self.start_balance = data["initialBalance"]
         self.api_key = data["apiKey"]
         self.api_secret = data["apiSecret"]
+        self.token = data["telegramToken"]
+        self.chat_id = data["chatId"]
         self.max_risk_percent = data["maxLostPerTradePercent"]
