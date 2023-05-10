@@ -5,13 +5,17 @@ from src.domain.UserData import UserData
 
 
 class Trade:
-    user_data: UserData
-
     def __init__(self, user_data: UserData):
+        # Stages
         self.stage: Stages = Stages.start
-        self.user_data = user_data
 
-    def run(self):
-        print(self.stage)
-        self.user_data.get_user_data("")
-        print(self.user_data.name)
+        # User Data
+        self.user_data = user_data
+        self.user_data.validate_fields()
+
+        print(self)
+
+    def __str__(self) -> str:
+        return f"Trade: stage {self.stage} - {self.user_data.name}"
+
+    user_data: UserData = None
