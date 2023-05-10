@@ -1,0 +1,9 @@
+{
+	"user_id": "darioArrieta",
+	"name": "Dario Arrieta",
+	"start_date": "2023-05-09 16:00:00",
+	"start_balance": 0,
+	"api_key": "myApiKey",
+	"api_secret": "myApiSecret",
+	"max_risk_percent": 2
+}
