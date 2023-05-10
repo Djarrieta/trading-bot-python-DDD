@@ -15,13 +15,14 @@ _________________
             """
         )
 
-    def formattedDate(self, date: datetime = "") -> str:
+    def formattedDate(self, date: str = None) -> str:
         formatted_date = ""
         if date is None:
-            formatted_date = datetime.datetime.strptime(
-                date, "%Y-%m-%d %H:%M:%S")
+            now = datetime.datetime.now()
+            formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
         else:
-            formatted_date = datetime.datetime.now() .strftime("%Y-%m-%d %H:%M:%S")
+            formatted_date = datetime.datetime.strptime(
+                date, "%y-%m-%d %H:%M:%S")
 
         return formatted_date
 
