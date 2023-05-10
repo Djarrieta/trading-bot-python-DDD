@@ -5,7 +5,7 @@ from firebase_admin import credentials, firestore
 from src.domain.UserData import UserData
 
 
-class UserDataFirebase(UserData):
+class UserDataFirestore(UserData):
     def __init__(self, user_id: str):
         cred = credentials.Certificate(
             'src/infrastructure/firestore_cred.json')

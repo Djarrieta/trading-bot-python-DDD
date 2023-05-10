@@ -1,9 +1,0 @@
-{
-	"user_id": "myUserId",
-	"name": "fName lName",
-	"start_date": "2023-05-09 16:00:00",
-	"start_balance": 1,
-	"api_key": "myApiKey",
-	"api_secret": "myApiSecret",
-	"max_risk_percent": 2
-}
