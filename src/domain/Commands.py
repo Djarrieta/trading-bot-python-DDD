@@ -5,4 +5,4 @@ from dataclasses import dataclass
 class Commands:
     info = "info"
     pnl = "pnl"
-    OpenPos = "OpenPos"
+    open_pos = "open_pos"

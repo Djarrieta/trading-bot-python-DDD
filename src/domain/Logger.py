@@ -5,6 +5,9 @@ from abc import ABC, abstractmethod
 
 @dataclass
 class Logger(ABC):
+    @abstractmethod
+    def mount(self):
+        pass
 
     @abstractmethod
     async def ping(self, text: str):

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from src.common.Validate import Validate
+from src.domain.Validate import Validate
 
 
 @dataclass()

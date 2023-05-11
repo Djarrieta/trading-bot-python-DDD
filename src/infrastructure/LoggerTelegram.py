@@ -1,7 +1,7 @@
-from telegram import Update, Bot
+from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-from src.domain.Commands import Commands
 
+from src.domain.Commands import Commands
 from src.domain.Logger import Logger
 
 
@@ -11,10 +11,9 @@ class LoggerTelegram(Logger):
         self.token = token
 
     async def ping(self, text):
-        bot = Bot(token=self.token)
-        await bot.sendMessage(self.chat_id, text)
+        pass
 
-    def mount_telegram(self) -> None:
+    def mount(self) -> None:
         app = ApplicationBuilder().token(self.token).build()
 
         app.add_handler(CommandHandler(

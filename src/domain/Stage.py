@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
-class Stages:
+class Stage:
     start = "start"
     search = "search"
     pos_open = "pos_open"
