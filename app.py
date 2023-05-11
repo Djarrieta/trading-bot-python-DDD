@@ -1,7 +1,8 @@
 
 import os
-from src.infrastructure.LoggerTelegram import LoggerTelegram
+
 from src.domain.Trade import Trade
+from src.infrastructure.LoggerTelegram import LoggerTelegram
 from src.infrastructure.UserDataFirestore import UserDataFirestore
 
 user_id = os.environ.get('USER_ID')
