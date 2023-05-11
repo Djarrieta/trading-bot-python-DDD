@@ -16,8 +16,8 @@ class Trade:
 
         # Logger
         self.logger = logger
-        self.logger.log("This is a good start " + self.logger.formattedDate())
-        self.logger.ping("ping")
+        self.logger.log("This is a good start")
+        self.logger.mount_telegram()
 
     def __str__(self) -> str:
         return f"Trade: stage {self.stage} - {self.user_data.name}"

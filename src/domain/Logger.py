@@ -7,7 +7,7 @@ from abc import ABC, abstractmethod
 class Logger(ABC):
 
     @abstractmethod
-    def ping(self, text: str):
+    async def ping(self, text: str):
         pass
 
     def log(self, text: str):
