@@ -23,7 +23,8 @@ class Trade:
         self.exchange = exchange
 
         # Mount Websockets
-        self.logger.mount()
+        self.exchange.mount()
+        # self.logger.mount()
         self.exchange.mount()
 
     def __str__(self) -> str:

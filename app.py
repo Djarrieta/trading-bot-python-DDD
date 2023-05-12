@@ -1,4 +1,3 @@
-
 import os
 
 from src.domain.Trade import Trade
