@@ -1,2 +1,2 @@
 #Start script
-USER_ID=darioArrieta python3 app.py
+USER_ID=userId python3 app.py
